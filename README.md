@@ -5,7 +5,7 @@
 A company receives IT support requests from employees for laptop, software, network, password, account and access related issues. These were tracked manually. This application gives support staff a simple, login-protected CLI tool to create, view, search and resolve service requests, with all data kept safe in JSON files between runs.
 
 ## Features Implemented
-- Register and login before the main menu is shown.Along with password Hashing and credentials verification.For e.g. User needs to be registered first to log in
+- Register and login before the main menu is shown.Along with password Hashing and credentials verification.For e.g. User needs to be registered first to log in.
 
 ![Login Screen](imgs/login.png)
 
@@ -26,8 +26,8 @@ A company receives IT support requests from employees for laptop, software, netw
 ![Exit and Restart Screen](imgs/exit_restart.png)
 
 ## Concepts Used
-- OOP: ServiceRequest and User classes with constructors, attributes, and methods (resolve(), check_password())
-- Exception Handling: custom exceptions (RequestNotFoundError, DuplicateRequestError, InvalidPriorityError, InvalidCredentialsError, UserAlreadyExistsError), no bare except
+- OOP: ServiceRequest and User classes with constructors, attributes and methods (resolve(), check_password())
+- Exception Handling: custom exceptions (RequestNotFoundError, DuplicateRequestError, InvalidPriorityError, InvalidCredentialsError, UserAlreadyExistsError).
 - File Handling: JSON persistence through the os and json modules in the infrastructure layer
 - SOLID: Single Responsibility (each class/module has one job) and Dependency Inversion (services depend on repository objects passed into them, not on file details)
 - DDD: domain / application / infrastructure layers kept strictly separate
@@ -140,6 +140,7 @@ View all requests
 ![View Screen](imgs/view.png)
 
 Search for SR101
+
 ![Search Screen](imgs/Search.png)
   
 Resolve SR101 and Try to resolve SR101 again
