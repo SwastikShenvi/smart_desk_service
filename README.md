@@ -10,15 +10,13 @@ A company receives IT support requests from employees for laptop, software, netw
 ![Login Screen](imgs/login.png)
 - Create a service request (status is always set to OPEN automatically)
 - Block duplicate Request IDs with a friendly message
-- 
-- View all saved service requests
-![Create and View Request](imgs/create_view_req.png)
+  ![Create and View Request](imgs/create_duplicate.png)
 - View all saved service requests
 ![View Screen](imgs/view.png)
 - Search a request by Request ID
   ![Search Screen](imgs/search.png)
 - Resolve an OPEN request; show a message if it is already RESOLVED
-- ![Resolve Screen](imgs/resolve.png)
+ ![Resolve Screen](imgs/resolve.png)
 - Full persistence: requests and users reload correctly after restart
 ![Exit and Restart Screen](imgs/exit_restart.png)
 
@@ -125,3 +123,18 @@ To confirm all commits, branches and the merge were correctly reflected, the com
 git log --oneline --graph --all
 ```
 ![Git Log](imgs/git.png)
+
+Mandatory Demonstration:
+Login/Register Functionality
+![Login Screen](imgs/login.png)
+
+Create SR101 with priority HIGH and Try to create SR101 again and show duplicate handling
+![Create and View Request](imgs/create_duplicate.png)
+View all requests
+![View Screen](imgs/view.png)
+Search for SR101
+  ![Search Screen](imgs/search.png)
+Resolve SR101 and Try to resolve SR101 again
+![Resolve Screen](imgs/resolve.png)
+Exit and restart the application and Search SR101 and prove that RESOLVED status was saved
+![Exit and Restart Screen](imgs/exit_restart.png)
