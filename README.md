@@ -103,10 +103,9 @@ git add application/
 git commit -m "Add request service and exception handling"
 
 git add main.py README.md .gitignore
-git commit -m "Complete CLI application"
+git commit -m "ata files for reference along with Complete CLI application"
 
-git add application/auth_service.py domain/users.py infrastructure/user_repository.py data/users.json
-git commit -m "Add login and authentication functionality"
+
 ```
 
 ### Branching and Merge Workflow
