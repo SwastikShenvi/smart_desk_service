@@ -1,5 +1,5 @@
-#Smart Service Desk Management System
-##Problem Statement
+# Smart Service Desk Management System
+## Problem Statement
 A company receives IT support requests from employees for laptop, software, network, password, account, and access related issues. These were tracked manually. This application gives support staff a simple, login-protected CLI tool to create, view, search, and resolve service requests, with all data kept safe in JSON files between runs.
 
 Features Implemented
