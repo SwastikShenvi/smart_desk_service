@@ -6,15 +6,21 @@ A company receives IT support requests from employees for laptop, software, netw
 
 ## Features Implemented
 - Register and login before the main menu is shown
-## Login Demonstration
 
 ![Login Screen](imgs/login.png)
 - Create a service request (status is always set to OPEN automatically)
 - Block duplicate Request IDs with a friendly message
+- 
 - View all saved service requests
+![Create and View Request](imgs/create_view_req.png)
+- View all saved service requests
+![View Screen](imgs/view.png)
 - Search a request by Request ID
+  ![Search Screen](imgs/search.png)
 - Resolve an OPEN request; show a message if it is already RESOLVED
+- ![Resolve Screen](imgs/resolve.png)
 - Full persistence: requests and users reload correctly after restart
+![Exit and Restart Screen](imgs/exit_restart.png)
 
 ## Concepts Used
 - OOP: ServiceRequest and User classes with constructors, attributes, and methods (resolve(), check_password())
@@ -118,3 +124,4 @@ To confirm all commits, branches and the merge were correctly reflected, the com
 ```bash
 git log --oneline --graph --all
 ```
+![Git Log](imgs/git.png)
