@@ -139,9 +139,8 @@ Create SR101 with priority HIGH and Try to create SR101 again and show duplicate
 View all requests
 ![View Screen](imgs/view.png)
 
-
 Search for SR101
-  ![Search Screen](imgs/Search.png)
+![Search Screen](imgs/Search.png)
   
 Resolve SR101 and Try to resolve SR101 again
 ![Resolve Screen](imgs/resolve.png)
