@@ -5,7 +5,7 @@
 A company receives IT support requests from employees for laptop, software, network, password, account and access related issues. These were tracked manually. This application gives support staff a simple, login-protected CLI tool to create, view, search and resolve service requests, with all data kept safe in JSON files between runs.
 
 ## Features Implemented
-- Register and login before the main menu is shown
+- Register and login before the main menu is shown.Along with password Hashing and credentials verification.For e.g. User needs to be registered first to log in
 
 ![Login Screen](imgs/login.png)
 
@@ -49,7 +49,7 @@ Instead of letting the program crash, these situations raise a specific exceptio
 | Exception | When it happens |
 |---|---|
 | `DuplicateRequestError` | Creating a request with an ID that already exists |
-| `RequestNotFoundError` | Searching for or resolving an ID that doesn't exist |
+| `RequestNotFoundError` | Searching for ID that doesn't exist |
 | `InvalidPriorityError` | Giving a request a priority other than LOW, MEDIUM or HIGH |
 | `InvalidCredentialsError` | Logging in with the wrong username or password |
 | `UserAlreadyExistsError` | Registering a username that is already taken |
@@ -123,14 +123,15 @@ main always holds the last known-working,ready version, while development was us
 ### Verifying the Workflow
 
 To confirm all commits, branches and the merge were correctly reflected, the commit graph was checked before submission.
+(4th commit was "data files for reference along with Complete CLI application ' )
 
 ```bash
 git log --oneline --graph --all
 ```
 ![Git Log](imgs/git.png)
 
-##Mandatory Demonstration:
-Login/Register Functionality
+## Mandatory Demonstration:
+Login/Register Functionality with Password Hashing
 ![Login Screen](imgs/login.png)
 
 Create SR101 with priority HIGH and Try to create SR101 again and show duplicate handling
@@ -138,6 +139,8 @@ Create SR101 with priority HIGH and Try to create SR101 again and show duplicate
 
 View all requests
 ![View Screen](imgs/view.png)
+
+
 Search for SR101
   ![Search Screen](imgs/Search.png)
   
