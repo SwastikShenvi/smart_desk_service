@@ -17,7 +17,9 @@ File Handling: JSON persistence through the os and json modules in the infrastru
 SOLID: Single Responsibility (each class/module has one job) and Dependency Inversion (services depend on repository objects passed into them, not on file details)
 DDD: domain / application / infrastructure layers kept strictly separate
 Git: development branch for building features, merged into main after testing
-Project Folder Structure
+## Project Folder Structure
+
+```text
 smart-service-desk/
 ├── domain/
 │   ├── service_request.py
@@ -35,3 +37,4 @@ smart-service-desk/
 ├── main.py
 ├── README.md
 └── .gitignore
+```
